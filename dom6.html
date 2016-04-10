@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+<title>DOM6</title>
+<script>
+		function func1()
+		{
+			var thisnode=document.getElementById("MyPara");
+			thisnode.parentNode.removeChild(thisnode);
+		}
+		function func2()
+		{
+			var tisnode=document.getElementsByTagName("p")[0];
+			tisnode.parentNode.removeChild(tisnode);
+		}
+		function func3()
+		{
+			var tinsode=document.getElementById("MBody");
+			tinsode.removeChild(tinsode.firstChild);
+		}
+</script>
+</head>
+<body id="MBody">
+<p id="MyPara">Hello</p>
+<p>How R U?</p>
+<p>I am fine</p>
+<button onclick="func1()" type="Button1">Button1</button>
+<button onclick="func2()" type="Button2">Button2</button>
+<button onclick="func3()" type="Button3">Button3</button>
+</body>
+</html>
